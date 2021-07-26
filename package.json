@@ -1,0 +1,20 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "Assessment answers",
+  "main": "answers.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArunnathG/tech_assessment.git"
+  },
+  "scripts": {
+    "generateAnswer1": "node answer1.js",
+    "generateAnswer2": "node answer2.js"
+  },
+  "author": "Arunnath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArunnathG/tech_assessment/issues"
+  },
+  "homepage": "https://github.com/ArunnathG/tech_assessment#readme"
+}
