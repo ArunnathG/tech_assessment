@@ -50,8 +50,8 @@ function getProcessingPage(data) {
     }
  
     //return result after processing or immediately
-    let result = data
-    let processed = false
+    let result = data;
+    let processed = false;
             for(const [index ,  value] of data.entries()) {
                 const {state} = value
                 const processedData = () => {
@@ -65,7 +65,9 @@ function getProcessingPage(data) {
                 }
                if(state === 'processing') {
                 processed= true;
-                processedData().then((res) => {return res})
+                 processedData().then((res) => {
+                     console.log(res)
+                     return res}).catch((err) => {throw err})
                } else if(!processed){
                   
                 return handleResult(result[index])
